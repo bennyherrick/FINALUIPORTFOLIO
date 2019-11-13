@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="fF3-85-YGK">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--By Benny Herrick-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="calculator" id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZjV-c7-9nm">
+                                <rect key="frame" x="153" y="76" width="68" height="41"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="calculator"/>
+                                <connections>
+                                    <segue destination="8c0-Ps-YEw" kind="show" id="Y4I-ti-VfE"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="K06-Je-3XE">
+                                <rect key="frame" x="-374" y="538" width="358" height="181"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="steve.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="P9I-i2-L1P">
+                                <rect key="frame" x="-4" y="303" width="383" height="514"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dWk-FO-HeF">
+                                <rect key="frame" x="151" y="257" width="72" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="square lab"/>
+                                <connections>
+                                    <segue destination="Jzi-Us-U7j" kind="show" id="fEF-1S-1Wg"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QjC-SQ-oPK">
+                                <rect key="frame" x="148" y="168" width="78" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="pythagorus"/>
+                                <connections>
+                                    <segue destination="1oi-wH-52p" kind="show" id="p4V-q3-tIR"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="By Benny Herrick" id="XCp-YW-lm0">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="Smh-gb-8je"/>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1071.2" y="136.28185907046478"/>
+        </scene>
+        <!--SquareLab-->
+        <scene sceneID="wqn-qd-MaU">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="SquareLab" storyboardName="Square lab" referencedIdentifier="SquareLab" id="Jzi-Us-U7j" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="Va8-DN-Myq"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3hI-aK-TkA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1690" y="-15"/>
+        </scene>
+        <!--calculator-->
+        <scene sceneID="dxH-xQ-0ad">
+            <objects>
+                <viewControllerPlaceholder storyboardName="calculator" referencedIdentifier="calculator" id="8c0-Ps-YEw" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="QFy-Dp-dQw"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jtE-1e-fnx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1668" y="63.868065967016499"/>
+        </scene>
+        <!--pythagorus-->
+        <scene sceneID="lFG-g3-IuI">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="pythagorus" storyboardName="pythagorus" referencedIdentifier="pythagorus" id="1oi-wH-52p" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="HFy-xX-xph"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2j4-bD-gdN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1832.8" y="228.48575712143929"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="S0I-Fh-K4R">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="fF3-85-YGK" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="1ji-iO-Tpa">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="fUk-H5-3pF"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OGH-Mh-TCH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="132" y="136.28185907046478"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="steve.jpg" width="300" height="168"/>
+    </resources>
+</document>
